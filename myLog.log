@@ -1,0 +1,105 @@
+2020-10-15 20:35:00.283  INFO 4420 --- [main] com.sda.springProject.dao.TestDao        : Startuje TestDao info
+2020-10-15 20:35:00.294 ERROR 4420 --- [main] com.sda.springProject.dao.TestDao        : Startuje TestDao error
+2020-10-15 20:35:00.294  WARN 4420 --- [main] com.sda.springProject.dao.TestDao        : Startuje TestDao warn
+2020-10-15 20:35:00.295 DEBUG 4420 --- [main] com.sda.springProject.dao.TestDao        : Startuje TestDao debug
+2020-10-15 20:35:00.335 TRACE 4420 --- [main] com.sda.springProject.dao.TestDao        : Startuje TestDao trace
+2020-10-15 20:35:00.418  INFO 4420 --- [main] com.sda.springProject.dao.TestDao        : Wystartował TestDao
+2020-10-15 20:35:01.487  INFO 4420 --- [SpringContextShutdownHook] com.sda.springProject.dao.TestDao        : Niszczymy TestDao
+2020-10-15 20:44:17.699  INFO 4860 --- [main] c.s.s.SpringProjectApplication           : Starting SpringProjectApplication on Samsung with PID 4860 (C:\Users\Maciek\Desktop\kurs\springProject\target\classes started by Maciek in C:\Users\Maciek\Desktop\kurs\springProject)
+2020-10-15 20:44:17.720  INFO 4860 --- [main] c.s.s.SpringProjectApplication           : No active profile set, falling back to default profiles: default
+2020-10-15 20:44:21.606  WARN 4860 --- [main] s.c.a.AnnotationConfigApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'starter': Unsatisfied dependency expressed through field 'testService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'testService' defined in file [C:\Users\Maciek\Desktop\kurs\springProject\target\classes\com\sda\springProject\service\TestService.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'testDao' defined in file [C:\Users\Maciek\Desktop\kurs\springProject\target\classes\com\sda\springProject\dao\TestDao.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.sda.springProject.dao.TestDao]: Constructor threw exception; nested exception is java.lang.NullPointerException
+2020-10-15 20:44:21.671  INFO 4860 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-10-15 20:44:21.730 ERROR 4860 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'starter': Unsatisfied dependency expressed through field 'testService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'testService' defined in file [C:\Users\Maciek\Desktop\kurs\springProject\target\classes\com\sda\springProject\service\TestService.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'testDao' defined in file [C:\Users\Maciek\Desktop\kurs\springProject\target\classes\com\sda\springProject\dao\TestDao.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.sda.springProject.dao.TestDao]: Constructor threw exception; nested exception is java.lang.NullPointerException
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:643) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:130) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1420) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:897) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879) ~[spring-context-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551) ~[spring-context-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758) ~[spring-boot-2.3.4.RELEASE.jar:2.3.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750) ~[spring-boot-2.3.4.RELEASE.jar:2.3.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) ~[spring-boot-2.3.4.RELEASE.jar:2.3.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) ~[spring-boot-2.3.4.RELEASE.jar:2.3.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237) ~[spring-boot-2.3.4.RELEASE.jar:2.3.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) ~[spring-boot-2.3.4.RELEASE.jar:2.3.4.RELEASE]
+	at com.sda.springProject.SpringProjectApplication.main(SpringProjectApplication.java:15) ~[classes/:na]
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'testService' defined in file [C:\Users\Maciek\Desktop\kurs\springProject\target\classes\com\sda\springProject\service\TestService.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'testDao' defined in file [C:\Users\Maciek\Desktop\kurs\springProject\target\classes\com\sda\springProject\dao\TestDao.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.sda.springProject.dao.TestDao]: Constructor threw exception; nested exception is java.lang.NullPointerException
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:797) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:227) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1356) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1203) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:556) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1307) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1227) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	... 19 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'testDao' defined in file [C:\Users\Maciek\Desktop\kurs\springProject\target\classes\com\sda\springProject\dao\TestDao.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.sda.springProject.dao.TestDao]: Constructor threw exception; nested exception is java.lang.NullPointerException
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1318) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1213) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:556) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1307) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1227) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:884) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:788) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	... 32 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.sda.springProject.dao.TestDao]: Constructor threw exception; nested exception is java.lang.NullPointerException
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:217) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:87) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1310) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	... 44 common frames omitted
+Caused by: java.lang.NullPointerException: null
+	at com.sda.springProject.dao.TestDao.<init>(TestDao.java:30) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490) ~[na:na]
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:204) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	... 46 common frames omitted
+
+2020-10-15 20:46:50.378  INFO 1980 --- [main] c.s.s.SpringProjectApplication           : Starting SpringProjectApplication on Samsung with PID 1980 (C:\Users\Maciek\Desktop\kurs\springProject\target\classes started by Maciek in C:\Users\Maciek\Desktop\kurs\springProject)
+2020-10-15 20:46:50.388  INFO 1980 --- [main] c.s.s.SpringProjectApplication           : No active profile set, falling back to default profiles: default
+2020-10-15 20:46:53.456  INFO 1980 --- [main] Test                                     : Wystartował TestDao
+2020-10-15 20:46:53.462  INFO 1980 --- [main] Test                                     : Startuje TestDao info
+2020-10-15 20:46:53.465 ERROR 1980 --- [main] Test                                     : Startuje TestDao error
+2020-10-15 20:46:53.466  WARN 1980 --- [main] Test                                     : Startuje TestDao warn
+2020-10-15 20:46:53.738  INFO 1980 --- [main] c.s.s.SpringProjectApplication           : Started SpringProjectApplication in 6.134 seconds (JVM running for 9.392)
+2020-10-15 20:46:53.896  INFO 1980 --- [SpringContextShutdownHook] Test                                     : Niszczymy TestDao
+2020-10-15 20:52:22.840  INFO 4028 --- [main] c.s.s.SpringProjectApplication           : Starting SpringProjectApplication on Samsung with PID 4028 (C:\Users\Maciek\Desktop\kurs\springProject\target\classes started by Maciek in C:\Users\Maciek\Desktop\kurs\springProject)
+2020-10-15 20:52:22.877  INFO 4028 --- [main] c.s.s.SpringProjectApplication           : No active profile set, falling back to default profiles: default
+2020-10-15 20:52:27.330  INFO 4028 --- [main] Test                                     : Wystartował TestDao
+2020-10-15 20:52:27.333  INFO 4028 --- [main] Test                                     : Startuje TestDao info
+2020-10-15 20:52:27.338 ERROR 4028 --- [main] Test                                     : Startuje TestDao error
+2020-10-15 20:52:27.367  WARN 4028 --- [main] Test                                     : Startuje TestDao warn
+2020-10-15 20:52:28.240  INFO 4028 --- [main] c.s.s.SpringProjectApplication           : Started SpringProjectApplication in 9.957 seconds (JVM running for 13.534)
+2020-10-15 20:52:28.594  INFO 4028 --- [SpringContextShutdownHook] Test                                     : Niszczymy TestDao
+2020-10-15 21:00:58.766  INFO 5304 --- [main] c.s.s.SpringProjectApplication           : Starting SpringProjectApplication on Samsung with PID 5304 (C:\Users\Maciek\Desktop\kurs\springProject\target\classes started by Maciek in C:\Users\Maciek\Desktop\kurs\springProject)
+2020-10-15 21:00:58.777  INFO 5304 --- [main] c.s.s.SpringProjectApplication           : No active profile set, falling back to default profiles: default
+2020-10-15 21:01:00.607  INFO 5304 --- [main] org.slf4j.Logger                         : Wystartował TestDao
+2020-10-15 21:01:00.610  INFO 5304 --- [main] org.slf4j.Logger                         : Startuje TestDao info
+2020-10-15 21:01:00.612 ERROR 5304 --- [main] org.slf4j.Logger                         : Startuje TestDao error
+2020-10-15 21:01:00.613  WARN 5304 --- [main] org.slf4j.Logger                         : Startuje TestDao warn
+2020-10-15 21:01:00.853  INFO 5304 --- [main] c.s.s.SpringProjectApplication           : Started SpringProjectApplication in 3.681 seconds (JVM running for 5.253)
+2020-10-15 21:01:00.952  INFO 5304 --- [SpringContextShutdownHook] org.slf4j.Logger                         : Niszczymy TestDao
